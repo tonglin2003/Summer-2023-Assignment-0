@@ -1,12 +1,12 @@
 function sumOfAllOddNumbers(nums) {
   // Insert code here;
-  let countOfAllEven  = 0;
+  let countOfAllOdd  = 0;
 
   nums.forEach(element => {
-    countOfAllEven = element % 2 !== 0? countOfAllEven + 1 : countOfAllEven;
+    countOfAllOdd = element % 2 !== 0? countOfAllOdd + 1 : countOfAllOdd;
   });
 
-  return countOfAllEven;
+  return countOfAllOdd;
 }
 
 // Do not edit this line;
