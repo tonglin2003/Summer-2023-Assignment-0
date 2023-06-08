@@ -6,7 +6,7 @@ class MySolution {
   binarySearch(nums, target) {
     // Insert code here;
     
-    // base case, if length is 1 and median is the target
+    // base case, if length is 1, check if the last number is the taget else false
     if (nums.length === 1)
     {
       if (nums[0] === target) return true;
@@ -14,6 +14,7 @@ class MySolution {
     }
     else 
     {
+      // if length is lesser or equal to 2, adjust the median to reasonable number
       let median = nums.length <= 2? 0 : Math.floor(nums.length / 2);
       if (nums[median] > target)
       {

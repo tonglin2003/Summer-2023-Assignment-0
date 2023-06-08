@@ -3,7 +3,7 @@ function countOfAllNumbersSmallerThanTarget(nums, target) {
   let countOfSmallerNum = 0;
 
   nums.forEach(element => {
-    countOfSmallerNum = element < target? countOfSmallerNum++ : countOfSmallerNum;
+    countOfSmallerNum = element < target? countOfSmallerNum + 1 : countOfSmallerNum;
   });
 
   return countOfSmallerNum;
